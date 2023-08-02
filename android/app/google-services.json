@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "956674870852",
+    "project_id": "herewego-55f42",
+    "storage_bucket": "herewego-55f42.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:956674870852:android:3070828b6ff6f8fc8f3611",
+        "android_client_info": {
+          "package_name": "com.example.herewego"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "956674870852-c96ekhgfe26256h91570408iae32iqd0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0mQYPkUVimgwaCpxQJ0GniHzXGKQ7_E0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "956674870852-c96ekhgfe26256h91570408iae32iqd0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
