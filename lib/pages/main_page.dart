@@ -97,12 +97,22 @@ class _MainPageState extends State<MainPage> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          Container(
+            height: 200,
+            width: double.infinity,
+            child: post.imgUrl != null
+                ? Image.network(post.imgUrl!, fit: BoxFit.cover)
+                : Image.asset(
+                    'assets/images/default.jpg',
+                    fit: BoxFit.cover,
+                  ),
+          ),
           Row(
             children: [
               Text(
                 post.firstName!,
                 style: const TextStyle(
-                  color: Colors.black,
+                  color: Color(0xFF111111),
                   fontSize: 24,
                 ),
               ),
@@ -110,25 +120,23 @@ class _MainPageState extends State<MainPage> {
               Text(
                 post.lastName!,
                 style: const TextStyle(
-                  color: Colors.black,
+                  color: Color(0xFF111111),
                   fontSize: 24,
                 ),
               ),
             ],
           ),
-          const SizedBox(height: 5),
           Text(
             post.date!,
             style: const TextStyle(
-              color: Colors.black,
+              color: Color(0xFF4A4A4A),
               fontSize: 16,
             ),
           ),
-          const SizedBox(height: 5),
           Text(
             post.content!,
             style: const TextStyle(
-              color: Colors.black,
+              color: Color(0xFF4A4A4A),
               fontSize: 16,
             ),
           ),

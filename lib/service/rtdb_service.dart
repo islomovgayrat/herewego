@@ -24,6 +24,7 @@ class RTDBService {
         firstName: map['firstName'],
         lastName: map['lastName'],
         content: map['content'],
+        imgUrl: map['imgUrl'],
         date: map['date'],
       );
       items.add(post);

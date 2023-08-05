@@ -1,6 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
-
 import '../pages/sign_in.dart';
 
 class AuthService {
@@ -9,6 +8,11 @@ class AuthService {
   static bool isLoggedIn() {
     final User? firebaseUser = auth.currentUser;
     return firebaseUser != null;
+  }
+
+  static String currentUserId() {
+    final User? firebaseUser = auth.currentUser;
+    return firebaseUser!.uid;
   }
 
   static Future<User?> signInUser(String email, String password) async {
